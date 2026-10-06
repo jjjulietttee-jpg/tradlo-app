@@ -1,1 +1,28 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tradlo — Tradlo</title><style>body{margin:0;background:#F6F2E9;color:#1A1D24;font:17px/1.6 -apple-system,system-ui,sans-serif}main{max-width:680px;margin:0 auto;padding:48px 22px 80px}h1{font:700 30px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;margin:0 0 6px}h2{font:600 13px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;margin:32px 0 8px;color:#6A6E77}a{color:#B87400}.muted{color:#6A6E77;font-size:14px}li{margin:4px 0}.card{background:#fff;border:1px solid #E4DCCB;border-radius:11px;padding:18px 20px;margin:18px 0}@media (prefers-color-scheme:dark){body{background:#121418;color:#EEF0F3}.card{background:#1C1F25;border-color:#2D3139}.muted,h2{color:#9CA1AB}a{color:#FFC247}}</style></head><body><main><h1>Tradlo</h1><p>A private trading journal for iPhone. Log a trade in ten seconds, see what it cost you by Friday.</p><p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tradlo trading journal</title><style>
+:root{--bone:#F6F2E9;--ink:#1A1D24;--gr:#6A6E77;--rule:#E4DCCB;--gain:#1B8A66;--loss:#D2432D;--saf:#F2A516;--card:#FBF8F1}
+@media(prefers-color-scheme:dark){:root{--bone:#121418;--ink:#EEF0F3;--gr:#9CA1AB;--rule:#2D3139;--gain:#3CCB97;--loss:#FF6B55;--saf:#FFC247;--card:#1A1D23}}
+*{box-sizing:border-box}body{margin:0;background:var(--bone);color:var(--ink);font:16.5px/1.65 -apple-system,system-ui,sans-serif}
+.tape{background:var(--saf);color:#1A1D24;font:600 13px/1 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.5px}
+.tape div{max-width:780px;margin:0 auto;padding:13px 20px;display:flex;flex-wrap:wrap;gap:8px 22px}
+.tape b{margin-right:auto;font-size:15px}.tape a{color:#1A1D24;text-decoration:none;text-transform:uppercase;padding-bottom:2px;border-bottom:2px solid transparent}.tape a.on{border-bottom-color:#1A1D24}
+main{max-width:780px;margin:0 auto;padding:36px 20px 70px}
+h1{font:700 30px/1.2 ui-monospace,"SF Mono",Menlo,monospace;margin:0 0 8px;letter-spacing:-.5px}
+.meta{font:500 13px ui-monospace,"SF Mono",Menlo,monospace;color:var(--gr);margin:0 0 26px}
+.tl{border-left:3px solid var(--ink);margin:20px 0 0 8px;padding-left:0}
+.ev{position:relative;padding:0 0 26px 26px}
+.ev:before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;background:var(--saf);border:3px solid var(--ink);border-radius:50%}
+.ev.g:before{background:var(--gain)}.ev.l:before{background:var(--loss)}
+.ev h2{font:700 12.5px ui-monospace,"SF Mono",Menlo,monospace;text-transform:uppercase;letter-spacing:1.2px;color:var(--gr);margin:0 0 4px}
+.ev h3{font:700 20px/1.3 -apple-system,system-ui,sans-serif;margin:0 0 6px}
+.ev p{margin:6px 0}.ev ul{padding-left:20px;margin:6px 0}
+.slip{background:var(--card);border:1px dashed var(--gr);border-radius:6px;padding:12px 16px;margin:10px 0;font:500 14.5px/1.6 ui-monospace,"SF Mono",Menlo,monospace}
+.slip i{font-style:normal;color:var(--gain)}.slip s{text-decoration:none;color:var(--loss)}
+a{color:var(--gain)}
+.go{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+.go a{font:700 14px ui-monospace,Menlo,monospace;color:var(--ink);text-decoration:none;border:2px solid var(--ink);border-radius:4px;padding:9px 14px;background:var(--card)}
+.go a:hover{background:var(--saf)}
+</style></head><body><div class="tape"><div><b>TRADLO</b><a href="index.html" class="on">Desk</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Help</a></div></div><main><h1>Tradlo</h1><p class="meta">trading journal &middot; calendar of P&amp;L &middot; edge by setup</p>
+<p>Tradlo is a diary for people who trade stocks, options, futures, forex or crypto and want to see which habits make money and which leak it. Log a trade by hand or bring in a broker CSV, tag the setup and the mistake, then read your edge in R-multiples.</p>
+<div class="go"><a href="privacy.html">&rarr; privacy</a><a href="terms.html">&rarr; terms</a><a href="support.html">&rarr; help</a></div>
+<div class="slip">Journal software only. Tradlo does not connect to a broker, hold money, place orders or give recommendations.</div>
+<p>Built and run by an independent developer. Contact: <a href="mailto:nastya.shchaveleva@internet.ru">nastya.shchaveleva@internet.ru</a>.</p></main></body></html>
